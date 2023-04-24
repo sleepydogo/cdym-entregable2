@@ -1,5 +1,7 @@
 // Muestra digitos ingresados al teclado matricial 4x4 en una pantalla LCD 16x2
 
+// Muestra digitos ingresados al teclado matricial 4x4 en una pantalla LCD 16x2
+
 #include <avr/io.h>
 #include "lcd.h"
 #include <stdio.h>
@@ -62,8 +64,9 @@ uint8_t KEYPAD_Scan(uint8_t *key)
 int main(void){
 	
 	/* Setup */
-	KEYPAD_Init();
 	LCDinit();
+	
+	KEYPAD_Init();
 	_delay_ms(1);
 	
 	LCDclr();
