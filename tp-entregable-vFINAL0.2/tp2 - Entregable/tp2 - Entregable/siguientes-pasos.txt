@@ -1,0 +1,9 @@
+
+IMPLEMENTACIONES:
+    - Implementacion de Estado cerrado
+    - Implementacion de Estado abierto
+    - Implementacion de Estado denegado
+    - Implementacion de Estado horas
+    - Implementacion de Estado minutos
+    - Implementacion de Estado segundos
+
