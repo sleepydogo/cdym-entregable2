@@ -8,6 +8,7 @@
 
 #include "KeyPad4x4.h"
 
+// Mapeo de las teclas del keypad (65,66,67,68 = A,B,C,D ; 42,35 = *,#)
 static const uint8_t keypadCaracteres[4][4] =
 {
 	{1, 2, 3, 65},
@@ -21,7 +22,7 @@ static const uint8_t columnas[4] = {PIND3,PIND5,PIND4,PIND2};
 
 void KEYPAD_Init()
 {
-	// Se utilizaron las filas como salida (PULL-UP)
+	// Se utilizaron las filas como entrada (PULL-UP)
 	DDRB &= ~((1<<PORTB0) | (1<<PORTB3) | (1<<PORTB4));
 	DDRD &= ~(1<<PORTD7);
 	
